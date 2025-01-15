@@ -1,0 +1,46 @@
+name: Deploy to EC2 on sync_agmdm
+
+on:
+  push:
+    branches:
+      - main  # or your desired branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Check for sync_agmdm in commit message
+      id: check_commit
+      run: |
+        # Get the last commit message
+        COMMIT_MESSAGE=$(git log -1 --pretty=%B)
+        echo "Commit message: $COMMIT_MESSAGE"
+        
+        # Check if the commit message contains the keyword "sync_agmdm"
+        if [[ "$COMMIT_MESSAGE" == *"sync_agmdm"* ]]; then
+          echo "sync_agmdm found, proceeding with deployment"
+          echo "::set-output name=deploy::true"
+        else
+          echo "sync_agmdm not found, skipping deployment"
+          echo "::set-output name=deploy::false"
+        fi
+
+    - name: Set up SSH
+      if: steps.check_commit.outputs.deploy == 'true'
+      uses: webfactory/ssh-agent@v0.5.3
+      with:
+        ssh-private-key: ${{ secrets.EC2_SSH_PRIVATE_KEY }}
+
+    - name: Sync files to EC2
+      if: steps.check_commit.outputs.deploy == 'true'
+      run: |
+        ssh -o StrictHostKeyChecking=no ec2-user@<your-ec2-public-ip> "cd /var/www/html && git pull origin main"
+
+    - name: Restart nginx
+      if: steps.check_commit.outputs.deploy == 'true'
+      run: |
+        ssh -o StrictHostKeyChecking=no ec2-user@<your-ec2-public-ip> "sudo systemctl restart nginx"
