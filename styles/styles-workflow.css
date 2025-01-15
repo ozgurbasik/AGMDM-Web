@@ -125,6 +125,21 @@ body {
   display: block;
 }
 
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: white;
+  transition: 0.3s;
+}
+
 /* Hero Section */
 .hero {
   height: 100vh;

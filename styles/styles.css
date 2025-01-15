@@ -173,7 +173,7 @@ body {
 }
 
 .hero-content .btn {
-  margin-top: 33rem; /* Added margin-top to move the button down */
+  margin-top: 25rem; /* Adjusted margin-top to move the button down */
 }
 
 .hero h1 {
@@ -377,6 +377,15 @@ footer p {
   .section-title h2 {
     font-size: 2rem;
   }
+  .hero-content .btn {
+    margin-top: 32rem; /* Slightly closer to other elements */
+    text-align: center; /* Center alignment */
+  }
+}
+@media (max-height: 800px) {
+  .hero-content .btn {
+    margin-top: 5rem; /* Adjust this value as needed for shorter screens */
+  }
 }
 
 @media (max-width: 480px) {
@@ -409,8 +418,11 @@ footer p {
   }
 
   .hero-content .btn {
-    margin-top: 1rem; /* Adjust margin for smaller screens */
-    display: inline-block; /* Ensure the button is inline-block */
+    margin-top: 1rem; /* Closer for compact view */
+    transform: translateY(10px); /* Move button further down */
+    width: 90%; /* Make button span more width for better visibility */
+    margin-left: auto; /* Center horizontally */
+    margin-right: auto;
   }
 }
 
