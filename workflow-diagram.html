@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introduction & Hero</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <link rel="stylesheet" href="./styles/styles-workflow.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="navbar">
+      <nav>
+        <a href="index.html" class="logo-combined">
+          <img
+            src="./styles/images/tedu1.png"
+            alt="TEDU Logo"
+            class="logo-img"
+          />
+          <span class="logo">AGMDM</span>
+        </a>
+        <ul>
+          <li><a href="./index.html#intro">Introduction</a></li>
+          <li><a href="./index.html#about">About</a></li>
+          <li><a href="./index.html#features">Features</a></li>
+          <li><a href="./index.html#requirements">Requirements</a></li>
+          <li><a href="./index.html#team">Team</a></li>
+          <li><a href="./index.html#contact">Contact</a></li>
+          <li class="dropdown">
+            <a href="#documents" class="dropbtn">Documents</a>
+            <div class="dropdown-content">
+              <a href="object-class-diagram.html">Object-Class Diagram</a>
+              <a href="workflow-diagram.html">Workflow Diagram</a>
+              <a href="agile-product-table.html">Agile Product Table</a>
+            </div>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1 data-aos="fade-up">Workflow Diagram</h1>
+      </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section id="intro">
+      <div class="section-title"></div>
+      <div class="content" data-aos="fade-up">
+        <!-- Add the image here -->
+        <div style="text-align: center; margin-top: 10px">
+          <img
+            src="./styles/images/workflow-diagram.png"
+            alt="AGMDM System Overview"
+            style="
+              max-width: 100%;
+              height: auto;
+              border: 1px solid #ddd;
+              border-radius: 8px;
+              box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            "
+          />
+          <p style="margin-top: 50px">
+            The diagram outlines the decision-based workflow of the Autonomous
+            Guided Military Drone Module (AGMDM), ensuring adaptive and
+            efficient operations. Starting with the drone's activation, it
+            evaluates key conditions at various decision points, such as signal
+            stability, target detection, exploration success, and the safety
+            button's status. If a stable signal and detected target are present,
+            the Autonomous Attack Protocol is triggered for engagement. In cases
+            where a target is not detected, the drone initiates the Target
+            Searching Protocol to locate one. If exploration fails or safety
+            conditions demand it, the De-Activation Protocol safely halts
+            operations. The workflow also accommodates operator intervention,
+            allowing for Manual Control when the safety button is deactivated.
+            This structured flow ensures the drone can dynamically adjust to
+            environmental and operational variables while prioritizing safety
+            and mission success.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025 AGMDM Project - CMPE 491 Senior Design Project I</p>
+      <p>Supervisor: Tolga Kurtuluş Çapın</p>
+      <p>Course Coordinator: Dr. Gökçe NUR YILMAZ</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

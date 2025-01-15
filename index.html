@@ -1,159 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AGMDM Project - Autonomous Guided Military Drone Module</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
     <div class="navbar">
-        <nav>
-            <a href="#" class="logo">AGMDM</a>
-            <ul>
-                <li><a href="#intro">Introduction</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#requirements">Requirements</a></li>
-                <li><a href="#team">Team</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+      <nav>
+        <a href="index.html" class="logo-combined">
+          <img
+            src="./styles/images/tedu1.png"
+            alt="TEDU Logo"
+            class="logo-img"
+          />
+          <span class="logo">AGMDM</span>
+        </a>
+        </a>
+        <ul>
+          <li><a href="#intro">Introduction</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#requirements">Requirements</a></li>
+          <li><a href="#team">Team</a></li>
+          <li class="dropdown">
+            <a href="#documents" class="dropbtn">Documents</a>
+            <div class="dropdown-content">
+              <a href="./object-class-diagram.html">Object-Class Diagram</a>
+              <a href="workflow-diagram.html">Workflow Diagram</a>
+              <a href="agile-product-table.html">Agile Product Table</a>
             </div>
-        </nav>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
     </div>
 
     <section class="hero">
-        <div class="hero-content">
-            <h1 data-aos="fade-up">Autonomous Guided Military Drone Module</h1>
-            <p data-aos="fade-up" data-aos-delay="200">A cutting-edge solution for
-            enhancing drone autonomy and resilience in military applications</p>
-            <a href="#about" class="btn" data-aos="fade-up" data-aos-delay="400">Learn More</a>
-        </div>
+      <div class="hero-content">
+        <h1 data-aos="fade-up">Autonomous Guided Military Drone Module</h1>
+        <p data-aos="fade-up" data-aos-delay="200" class="addInfo">
+          A cutting-edge solution for enhancing drone autonomy and resilience in
+          military applications
+        </p>
+        <a href="#about" class="btn" data-aos="fade-up" data-aos-delay="400"
+          >Learn More</a
+        >
+      </div>
     </section>
 
     <section id="intro">
-        <div class="section-title">
-            <h2 data-aos="fade-up">Introduction</h2>
-        </div>
-        <div class="content" data-aos="fade-up">
-            <p>The Autonomous Guided Military Drone Module (AGMDM) is 
-            a cutting-edge solution for enhancing drone autonomy and 
-            resilience in military applications. Developed by a team of senior 
-            design students at Boğaziçi University, AGMDM leverages state-of-the-art 
-            technologies to ensure mission continuity under the most challenging conditions. 
-            The system integrates real-time computer vision, advanced decision-making algorithms, 
-            and robust fail-safe protocols to revolution
-            ize drone operations.</p>
-        </div>
+      <div class="section-title">
+        <h2 data-aos="fade-up">Introduction</h2>
+      </div>
+      <div class="content" data-aos="fade-up">
+        <p>
+          The Autonomous Guided Military Drone Module (AGMDM), developed by
+          senior design students at TED University, enhances drone autonomy for
+          military operations by addressing challenges like signal interference
+          and dynamic terrains. Integrating computer vision, real-time
+          processing, and fail-safe protocols, it supports target detection,
+          tracking, and navigation while ensuring compatibility with various UAV
+          platforms. AGMDM prioritizes operational continuity, data security,
+          and energy efficiency, adhering to IEEE standards and ethical
+          considerations.
+        </p>
+      </div>
     </section>
 
     <section id="about">
-        <div class="section-title">
-            <h2 data-aos="fade-up">What is AGMDM</h2>
-        </div>
-        <div class="content" data-aos="fade-up">
-            <p>The Autonomous Guided Military Drone Module (AGMDM) 
-            is a groundbreaking innovation in military drone technology. 
-            Designed to address the limitations of traditional UAV systems, 
-            it leverages state-of-the-art autonomous technologies to ensure 
-            mission continuity under the most challenging conditions. 
-            AGMDM integrates real-time computer vision, 
-            advanced decision-making algorithms, and robust 
-            fail-safe protocols to revolutionize drone operations.</p>
-        </div>
-    </section>    
+      <div class="section-title">
+        <h2 data-aos="fade-up">What is AGMDM</h2>
+      </div>
+      <div class="content" data-aos="fade-up">
+        <p>
+          The Autonomous Guided Military Drone Module (AGMDM) is designed to
+          overcome the limitations of traditional UAV systems by utilizing
+          advanced autonomous technologies to ensure mission continuity in
+          challenging conditions. It integrates real-time computer vision,
+          decision-making algorithms, and robust fail-safe protocols to enhance
+          drone operations for military applications.
+        </p>
+      </div>
+    </section>
 
     <section id="features">
-        <div class="section-title">
-            <h2 data-aos="fade-up">Key Features</h2>
+      <div class="section-title">
+        <h2 data-aos="fade-up">Key Features</h2>
+      </div>
+      <div class="features">
+        <div class="feature-card" data-aos="fade-up">
+          <h3>Target Identification</h3>
+          <p>
+            Utilizes advanced computer vision algorithms to enable precise
+            detection and continuous tracking of designated targets in
+            real-time, adapting to environmental changes such as lighting,
+            movement, and distance​​​.
+          </p>
         </div>
-        <div class="features">
-            <div class="feature-card" data-aos="fade-up">
-                <h3>Target Identification</h3>
-                <p>Advanced computer vision for precise target detection and tracking</p>
-            </div>
-            <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
-                <h3>Autonomous Navigation</h3>
-                <p>SLAM-based navigation system for complex environments</p>
-            </div>
-            <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
-                <h3>Signal Resilience</h3>
-                <p>Robust operation during signal interference and communication loss</p>
-            </div>
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+          <h3>Autonomous Navigation</h3>
+          <p>
+            Implements a SLAM-based navigation system for precise movement
+            through complex environments, enabling obstacle avoidance and
+            real-time mapping​​​.
+          </p>
         </div>
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+          <h3>Signal Resilience</h3>
+          <p>
+            Ensures robust operation by activating preprogrammed fallback
+            protocols during signal interference or communication loss,
+            maintaining mission continuity​​​.
+          </p>
+        </div>
+      </div>
     </section>
 
     <section id="requirements" class="requirements">
-        <div class="section-title">
-            <h2 data-aos="fade-up">System Requirements</h2>
+      <div class="section-title">
+        <h2 data-aos="fade-up">System Requirements</h2>
+      </div>
+      <div class="content" data-aos="fade-up">
+        <div class="requirements-grid">
+          <div class="requirement-item">
+            <h3>Reliability</h3>
+            <p>
+              Dependable autonomous operation in diverse environments with
+              robust protocol design
+            </p>
+          </div>
+          <div class="requirement-item">
+            <h3>Scalability</h3>
+            <p>
+              Flexible architecture supporting future technological integrations
+            </p>
+          </div>
+          <div class="requirement-item">
+            <h3>Safety</h3>
+            <p>
+              Comprehensive fail-safe systems with operator control mechanisms
+            </p>
+          </div>
+          <div class="requirement-item">
+            <h3>Maintainability</h3>
+            <p>Easy diagnostic and repair processes with universal protocols</p>
+          </div>
         </div>
-        <div class="content" data-aos="fade-up">
-            <div class="requirements-grid">
-                <div class="requirement-item">
-                    <h3>Reliability</h3>
-                    <p>Dependable autonomous operation in diverse environments with robust protocol design</p>
-                </div>
-                <div class="requirement-item">
-                    <h3>Scalability</h3>
-                    <p>Flexible architecture supporting future technological integrations</p>
-                </div>
-                <div class="requirement-item">
-                    <h3>Safety</h3>
-                    <p>Comprehensive fail-safe systems with operator control mechanisms</p>
-                </div>
-                <div class="requirement-item">
-                    <h3>Maintainability</h3>
-                    <p>Easy diagnostic and repair processes with universal protocols</p>
-                </div>
-            </div>
-        </div>
+      </div>
     </section>
 
     <section id="team">
-        <div class="section-title">
-            <h2 data-aos="fade-up">Project Team</h2>
+      <div class="section-title">
+        <h2 data-aos="fade-up">Project Team</h2>
+      </div>
+      <div class="team-members">
+        <div class="team-member" data-aos="fade-up">
+          <img src="./styles/images/ozgur.jpg" alt="Team Member" />
+          <h3>Özgür Basık</h3>
+          <p>Team Lead / Developer</p>
         </div>
-        <div class="team-members">
-            <div class="team-member" data-aos="fade-up">
-                <img src="/api/placeholder/150/150" alt="Team Member">
-                <h3>Özgür Basık</h3>
-                <p>Team Lead / Developer</p>
-            </div>
-            <div class="team-member" data-aos="fade-up" data-aos-delay="200">
-                <img src="/api/placeholder/150/150" alt="Team Member">
-                <h3>Kaan Durukan</h3>
-                <p>Autonomous Design</p>
-            </div>
-            <div class="team-member" data-aos="fade-up" data-aos-delay="400">
-                <img src="/api/placeholder/150/150" alt="Team Member">
-                <h3>Emre Bülbül</h3>
-                <p>Developer / Somthing</p>
-            </div>
-            <div class="team-member" data-aos="fade-up" data-aos-delay="600">
-                <img src="/api/placeholder/150/150" alt="Team Member">
-                <h3>Yusuf Tan</h3>
-                <p>Developer </p>
-            </div>
-            <div class="team-member" data-aos="fade-up" data-aos-delay="800">
-                <img src="/api/placeholder/150/150" alt="Team Member">
-                <h3>Bora Gencer</h3>
-                <p>Mechanic </p>
-            </div>
+        <div class="team-member" data-aos="fade-up" data-aos-delay="200">
+          <img src="./styles/images/kaan.jpg" alt="Team Member" />
+          <h3>Kaan Durukan</h3>
+          <p>Developer</p>
         </div>
+        <div class="team-member" data-aos="fade-up" data-aos-delay="400">
+          <img src="./styles/images/emre.jpg" alt="Team Member" />
+          <h3>Emre Bülbül</h3>
+          <p>Developer</p>
+        </div>
+        <div class="team-member" data-aos="fade-up" data-aos-delay="600">
+          <img src="./styles/images/yusuf.jpg" alt="Team Member" />
+          <h3>Yusuf Tan</h3>
+          <p>Developer</p>
+        </div>
+      </div>
     </section>
 
     <footer>
-        <p>© 2025 AGMDM Project - CMPE 491 Senior Design Project I</p>
-        <p>Supervisor: Tolga Kurtuluş Çapın</p>
-        <p>Course Coordinator: Dr. Gökçe NUR YILMAZ</p>
+      <p>© 2025 AGMDM Project - CMPE 491 Senior Design Project I</p>
+      <p>Supervisor: Tolga Kurtuluş Çapın</p>
+      <p>Course Coordinator: Dr. Gökçe NUR YILMAZ</p>
     </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

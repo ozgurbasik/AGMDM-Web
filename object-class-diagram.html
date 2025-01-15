@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introduction & Hero</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <link rel="stylesheet" href="./styles/styles-object-class.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="navbar">
+      <nav>
+        <a href="index.html" class="logo-combined">
+          <img
+            src="./styles/images/tedu1.png"
+            alt="TEDU Logo"
+            class="logo-img"
+          />
+          <span class="logo">AGMDM</span>
+        </a>
+        <ul>
+          <li><a href="./index.html#intro">Introduction</a></li>
+          <li><a href="./index.html#about">About</a></li>
+          <li><a href="./index.html#features">Features</a></li>
+          <li><a href="./index.html#requirements">Requirements</a></li>
+          <li><a href="./index.html#team">Team</a></li>
+          <li><a href="./index.html#contact">Contact</a></li>
+          <li class="dropdown">
+            <a href="#documents" class="dropbtn">Documents</a>
+            <div class="dropdown-content">
+              <a href="object-class-diagram.html">Object-Class Diagram</a>
+              <a href="workflow-diagram.html">Workflow Diagram</a>
+              <a href="agile-product-table.html">Agile Product Table</a>
+            </div>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1 data-aos="fade-up">Object-Class Diagram</h1>
+      </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section id="intro">
+      <div class="section-title"></div>
+      <div class="content" data-aos="fade-up">
+        <!-- Add the image here -->
+        <div style="text-align: center; margin-top: 10px">
+          <img
+            src="./styles/images/object-class-diagram.png"
+            alt="AGMDM System Overview"
+            style="
+              max-width: 100%;
+              height: auto;
+              border: 1px solid #ddd;
+              border-radius: 8px;
+              box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            "
+          />
+          <p style="margin-top: 50px">
+            The diagram represents the Autonomous Guided Military Drone Module
+            (AGMDM) as a centralized system with interconnected classes that
+            manage the drone’s operations. At its core is the DroneModule, which
+            oversees various subsystems, including navigation, target
+            identification, decision-making, communication, safety, and data
+            logging. The NavigationSystem handles movement, obstacle avoidance,
+            and environmental mapping, while the TargetIdentification class
+            focuses on detecting and tracking targets in real time. The
+            DecisionMaking component dynamically manages mission-critical
+            decisions, supported by the Failsafes class, which provides safety
+            mechanisms for emergencies like signal loss or hardware failure.
+            Communication is secured through the CommunicationSystem, and the
+            SafetyProtocols enable emergency actions such as safe descent or
+            return-to-base. Autonomous functionalities, like searching for
+            targets, are managed by the AutonomousSearchAlgorithm, while motor
+            performance is fine-tuned through the TunableMotorCommsParameters
+            and PIDControl classes. Finally, the DataLogging system records
+            mission data for analysis. Together, these subsystems interact
+            dynamically to enable autonomous operations, adaptability to
+            real-time scenarios, and overall mission safety.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025 AGMDM Project - CMPE 491 Senior Design Project I</p>
+      <p>Supervisor: Tolga Kurtuluş Çapın</p>
+      <p>Course Coordinator: Dr. Gökçe NUR YILMAZ</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
