@@ -1,4 +1,4 @@
-name: Deploy to EC2 on sync_agmdm
+name: Deploy to EC2 on key word sync_agmdm
 
 on:
   push:
