@@ -38,9 +38,10 @@ jobs:
     - name: Sync files to EC2
       if: steps.check_commit.outputs.deploy == 'true'
       run: |
-        ssh -o StrictHostKeyChecking=no ec2-user@<your-ec2-public-ip> "cd /var/www/html && git pull origin main"
+        ssh -o StrictHostKeyChecking=no ec2-user@18.195.42.243 "cd /var/www/html && git pull origin main"
+
 
     - name: Restart nginx
       if: steps.check_commit.outputs.deploy == 'true'
       run: |
-        ssh -o StrictHostKeyChecking=no ec2-user@<your-ec2-public-ip> "sudo systemctl restart nginx"
+        ssh -o StrictHostKeyChecking=no ec2-user@18.195.42.243 "sudo systemctl restart nginx"
