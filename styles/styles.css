@@ -379,6 +379,41 @@ footer p {
   }
 }
 
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .btn {
+    padding: 0.5rem 1rem;
+  }
+
+  .section-title h2 {
+    font-size: 1.5rem;
+  }
+
+  .feature-card h3,
+  .requirement-item h3,
+  .team-member h3 {
+    font-size: 1.2rem;
+  }
+
+  .feature-card p,
+  .requirement-item p,
+  .team-member p {
+    font-size: 0.9rem;
+  }
+
+  .hero-content .btn {
+    margin-top: 1rem; /* Adjust margin for smaller screens */
+    display: inline-block; /* Ensure the button is inline-block */
+  }
+}
+
 /* Animations */
 @keyframes fadeIn {
   from {
