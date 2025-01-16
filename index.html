@@ -6,38 +6,29 @@
     <title>AGMDM Project - Autonomous Guided Military Drone Module</title>
     <link rel="icon" href="./styles/images/drone1.png" type="image/png" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
     <link rel="stylesheet" href="./styles/styles.css" />
-    
   </head>
   <body>
     <div class="navbar">
       <nav>
         <a href="index.html" class="logo-combined">
-          <img
-            src="./styles/images/tedu1.png"
-            alt="TEDU Logo"
-            class="logo-img"
-          />
+          <img src="./styles/images/tedu1.png" alt="TEDU Logo" class="logo-img" />
           <span class="logo">AGMDM</span>
-        </a>
         </a>
         <ul>
           <li><a href="#intro">About</a></li>
           <li><a href="#motivation">Motivation</a></li>
           <li><a href="#features">Features</a></li>
           <li><a href="#requirements">Requirements</a></li>
+          <li><a href="#technical">Technical Details</a></li>
           <li><a href="#team">Team</a></li>
           <li class="dropdown">
-            <a href="#documents" class="dropbtn">Documents</a>
+            <a href="#documents" class="dropbtn">More</a>
             <div class="dropdown-content">
               <a href="./object-class-diagram.html">Object-Class Diagram</a>
               <a href="workflow-diagram.html">Workflow Diagram</a>
-              <a href="agile-product-table.html">Agile Product Table</a>
+              <a href="agile-product-table.html">Agile Product Backlog</a>
             </div>
           </li>
         </ul>
@@ -53,12 +44,9 @@
       <div class="hero-content">
         <h1 data-aos="fade-up">Autonomous Guided Military Drone Module</h1>
         <p data-aos="fade-up" data-aos-delay="200" class="addInfo">
-          A cutting-edge solution for enhancing drone autonomy and resilience in
-          military applications
+          A solution for autonomy assistance aimed at improving drone capabilities and resilience in military applications.
         </p>
-        <a href="#intro" class="btn" data-aos="fade-up" data-aos-delay="400"
-          >Learn More</a
-        >
+        <a href="#intro" class="btn" data-aos="fade-up" data-aos-delay="400">Learn More</a>
       </div>
     </section>
 
@@ -68,15 +56,10 @@
       </div>
       <div class="content" data-aos="fade-up">
         <p>
-          The Autonomous Guided Military Drone Module (AGMDM), developed by
-          senior design students at TED University, enhances drone autonomy for
-          military operations by addressing challenges like signal interference
-          and dynamic terrains. Integrating computer vision, real-time
-          processing, and fail-safe protocols, it supports target detection,
-          tracking, and navigation while ensuring compatibility with various UAV
-          platforms. AGMDM prioritizes operational continuity, data security,
-          and energy efficiency, adhering to IEEE standards and ethical
-          considerations.
+          The Autonomous Guided Military Drone Module (AGMDM), developed by senior design students at TED University, enhances drone autonomy for military operations by addressing challenges like signal interference and dynamic terrains. Integrating computer vision, real-time processing, and fail-safe protocols, it supports target detection, tracking, and navigation while ensuring compatibility with various UAV platforms. AGMDM prioritizes operational continuity, data security, and energy efficiency, adhering to IEEE standards and ethical considerations.
+        </p>
+        <p>
+          In the current landscape of military drone technology, most advanced UAV systems remain accessible only to well-funded militaries due to their high costs and infrastructure requirements. These existing systems often require sophisticated command centers and face significant challenges with signal jamming, adverse weather conditions, and dynamic terrains. The AGMDM addresses these limitations by providing a cost-effective, scalable solution that makes advanced drone capabilities accessible to a broader range of defense organizations.
         </p>
       </div>
     </section>
@@ -87,15 +70,13 @@
       </div>
       <div class="content" data-aos="fade-up">
         <p>
-          The Autonomous Guided Military Drone Module (AGMDM) is designed to
-          overcome the limitations of traditional UAV systems by utilizing
-          advanced autonomous technologies to ensure mission continuity in
-          challenging conditions. It integrates real-time computer vision,
-          decision-making algorithms, and robust fail-safe protocols to enhance
-          drone operations for military applications.
+          The Autonomous Guided Military Drone Module (AGMDM) is designed to overcome the limitations of traditional UAV systems by utilizing advanced autonomous technologies to ensure mission continuity in challenging conditions. It integrates real-time computer vision, decision-making algorithms, and robust fail-safe protocols to enhance drone operations for military applications.
+        </p>
+        <p>
+          Our motivation stems from recognizing the significant gap in the military drone market. While cutting-edge UAV technology exists, its high costs and complexity create barriers for many defense organizations. The AGMDM aims to democratize access to advanced drone capabilities through innovative design and cost-effective solutions, without compromising on performance or reliability.
         </p>
       </div>
-    </section>
+    </section>    
 
     <section id="features">
       <div class="section-title">
@@ -105,32 +86,49 @@
         <div class="feature-card" data-aos="fade-up">
           <h3>Target Identification</h3>
           <p>
-            Utilizes advanced computer vision algorithms to enable precise
-            detection and continuous tracking of designated targets in
-            real-time, adapting to environmental changes such as lighting,
-            movement, and distance​​​.
+            Utilizes advanced computer vision algorithms to enable precise detection and continuous tracking of designated targets in real-time, adapting to environmental changes such as lighting, movement, and distance. The system employs OpenCV and custom deep learning models optimized for target recognition, with dynamic adjustment capabilities for automatic focus and target-lock parameters.
           </p>
         </div>
         <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
           <h3>Autonomous Navigation</h3>
           <p>
-            Implements a SLAM-based navigation system for precise movement
-            through complex environments, enabling obstacle avoidance and
-            real-time mapping​​​.
+            Implements a SLAM-based navigation system for precise movement through complex environments, enabling obstacle avoidance and real-time mapping. The system utilizes sophisticated environmental mapping algorithms and fail-safe protocols to ensure continued operation in dynamic environments, with comprehensive risk mitigation strategies.
           </p>
         </div>
         <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
           <h3>Signal Resilience</h3>
           <p>
-            Ensures robust operation by activating preprogrammed fallback
-            protocols during signal interference or communication loss,
-            maintaining mission continuity​​​.
+            Ensures robust operation by activating preprogrammed fallback protocols during signal interference or communication loss, maintaining mission continuity. Features multiple fail-safe mechanisms including controlled descent protocols, safe return-to-home functionality, and emergency landing procedures, all while maintaining detailed operation logs.
           </p>
         </div>
       </div>
     </section>
 
-    <section id="requirements" class="requirements">
+    <section id="technical">
+      <div class="section-title">
+        <h2 data-aos="fade-up">Technical Implementation</h2>
+      </div>
+      <div class="content" data-aos="fade-up">
+        <p>
+          At the core of the AGMDM is the NVIDIA Jetson Nano embedded processing unit, which powers our 
+          sophisticated computer vision and autonomous navigation systems. The platform integrates with the 
+          Robot Operating System (ROS) for efficient sensor management and data flow, while implementing 
+          universal communication protocols like UDP for reliable data exchange.
+        </p>
+        <p>
+          The system features multiple sophisticated protocols, including the Safety Button Protocol 
+          for controlling transitions between manual and autonomous modes, an Autonomous Search Protocol 
+          that activates when no target is detected, and a comprehensive Signal Loss Protocol for maintaining 
+          operation during communication disruptions. All operations are governed by strict ethical guidelines, 
+          maintaining transparency logs for AI-driven decisions and implementing robust accountability mechanisms.
+        </p>
+        <p>
+          Future-proofing is built into the AGMDM's design through its modular software architecture, which allows for independent component updates and supports iterative enhancements. The system's flexible hardware design accommodates future technology integration, while universal protocols ensure long-term compatibility across platforms. This approach, combined with easy diagnostic and repair processes, ensures the system remains viable and adaptable for years to come.
+        </p>
+      </div>
+    </section>
+
+    <section id="requirements">
       <div class="section-title">
         <h2 data-aos="fade-up">System Requirements</h2>
       </div>
@@ -138,26 +136,20 @@
         <div class="requirements-grid">
           <div class="requirement-item">
             <h3>Reliability</h3>
-            <p>
-              Dependable autonomous operation in diverse environments with
-              robust protocol design
-            </p>
+            <p>Dependable autonomous operation in diverse environments with robust protocol design 
+              and comprehensive system monitoring</p>
           </div>
           <div class="requirement-item">
             <h3>Scalability</h3>
-            <p>
-              Flexible architecture supporting future technological integrations
-            </p>
+            <p>Flexible architecture supporting future technological integrations and independent component updates</p>
           </div>
           <div class="requirement-item">
             <h3>Safety</h3>
-            <p>
-              Comprehensive fail-safe systems with operator control mechanisms
-            </p>
+            <p>Comprehensive fail-safe systems with operator control mechanisms and multiple emergency protocols</p>
           </div>
           <div class="requirement-item">
             <h3>Maintainability</h3>
-            <p>Easy diagnostic and repair processes with universal protocols</p>
+            <p>Easy diagnostic and repair processes with universal protocols for future-proofing</p>
           </div>
         </div>
       </div>
@@ -171,25 +163,51 @@
         <div class="team-member" data-aos="fade-up">
           <img src="./styles/images/ozgur.jpg" alt="Team Member" />
           <h3>Özgür Basık</h3>
-          <p>Team Lead / Developer</p>
+          <h4>Team Lead / Developer</h4>
+          <ul>
+            <li>Project Progress Monitoring & Managing</li>
+            <li>Web Page Design</li>
+            <li>Sponsorship</li>
+            <li>Embed Programming</li>
+            <li>Computer Vision</li>
+          </ul>
         </div>
         <div class="team-member" data-aos="fade-up" data-aos-delay="200">
           <img src="./styles/images/kaan.jpg" alt="Team Member" />
           <h3>Kaan Durukan</h3>
-          <p>Developer</p>
+          <h4>Developer</h4>
+          <ul>
+            <li>Testing and Validation</li>
+            <li>Documentation</li>
+            <li>Computer Vision</li>
+            <li>Electric & Electronics</li>
+          </ul>
         </div>
         <div class="team-member" data-aos="fade-up" data-aos-delay="400">
           <img src="./styles/images/emre.jpg" alt="Team Member" />
           <h3>Emre Bülbül</h3>
-          <p>Developer</p>
+          <h4>Developer</h4>
+          <ul>
+            <li>Computer Vision Coordinator</li>
+            <li>Embed Programming</li>
+            <li>Simulations</li>
+            <li>Drone Assembly</li>
+          </ul>
         </div>
         <div class="team-member" data-aos="fade-up" data-aos-delay="600">
           <img src="./styles/images/yusuf.jpg" alt="Team Member" />
           <h3>Yusuf Tan</h3>
-          <p>Developer</p>
+          <h4>Developer</h4>
+          <ul>
+            <li>Web Page Design</li>
+            <li>Sponsorship</li>
+            <li>Computer Vision</li>
+            <li>Component Research</li>
+          </ul>
         </div>
       </div>
     </section>
+    
 
     <footer>
       <p>© 2025 AGMDM Project - CMPE 491 Senior Design Project I</p>

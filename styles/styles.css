@@ -151,29 +151,27 @@ body {
   letter-spacing: 2px;
 }
 
-/* Hero Section */
-
 .hero {
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("images/drone.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
   align-items: flex-start; /* Changed from center to flex-start */
   justify-content: center;
-  text-align: center;
+  text-align: bottom;
   color: white;
   padding: 2rem;
 }
 
 .hero-content {
   max-width: 800px;
-  margin-top: 5rem; /* Added margin-top to move content upwards */
-}
-
-.hero-content .btn {
-  margin-top: 25rem; /* Adjusted margin-top to move the button down */
+  margin-top: 25rem; /* Adjust margin-top for vertical spacing */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem; /* Add padding for spacing within the container */
+  text-align: center; /* Center align content horizontally */
 }
 
 .hero h1 {
@@ -230,6 +228,41 @@ section {
   letter-spacing: 2px;
 }
 
+#intro {
+  padding: 100px 0;
+}
+
+#intro .section-title h2 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+#intro .content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.25rem;
+  padding-top: 30px;
+}
+
+#motivation {
+  background: var(--light);
+  padding: 100px 0;
+}
+
+#motivation .section-title h2 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+#motivation .content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.25rem;
+  padding-top: 30px;
+}
+
 /* Features Section */
 .features {
   max-width: 1200px;
@@ -256,6 +289,25 @@ section {
   margin-bottom: 1rem;
   font-size: 1.5rem;
 }
+
+#technical{
+  background: var(--light);
+  padding: 100px 0;
+}
+
+#technical .section-title h2 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+#technical .content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.25rem;
+  padding-top: 30px;
+}
+
 
 /* Requirements Section */
 .requirements {
@@ -288,13 +340,16 @@ section {
 }
 
 /* Team Section */
-.team {
-  max-width: 1200px;
-  margin: 0 auto;
-  text-align: center;
+#team {
+  background: var(--light);
+}
+
+#team .section-title h2 {
+  margin-bottom: 3rem;
 }
 
 .team-members {
+  background: var(--light);
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -408,7 +463,7 @@ footer p {
   .feature-card h3,
   .requirement-item h3,
   .team-member h3 {
-    font-size: 1.2rem;
+    font-size: 1.2 srem;
   }
 
   .feature-card p,
