@@ -207,7 +207,7 @@ body {
 
 .hero-content {
   max-width: 800px;
-  margin-top: 24rem; /* Default margin for large screens */
+  margin-top: 18rem; /* Default margin for large screens */
   margin-left: auto;
   margin-right: auto;
   padding: 1rem; /* Padding within the container */
@@ -217,7 +217,7 @@ body {
 /* Adjust margin-top for medium-sized screens */
 @media (max-width: 1024px) {
   .hero-content {
-    margin-top: 20rem;
+    margin-top: 18rem;
   }
 }
 
