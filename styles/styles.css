@@ -27,13 +27,13 @@ html {
 
 @media (max-width: 768px) {
   html {
-    font-size: 14px; /* Smaller on smaller screens */
+    font-size: 13px; /* Smaller on smaller screens */
   }
 }
 
 @media (max-width: 480px) {
   html {
-    font-size: 12px; /* Smallest font size for very small screens */
+    font-size: 11px; /* Smallest font size for very small screens */
   }
 }
 
@@ -232,7 +232,7 @@ body {
 @media (max-width: 480px) {
   .hero-content {
     margin-top: 12rem;
-    padding: 0.5rem; /* Reduce padding on smaller screens */
+    padding: 0.6rem; /* Reduce padding on smaller screens */
   }
 }
 
