@@ -16,6 +16,46 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: 18px; /* Default for larger screens */
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 15px; /* Slightly smaller on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 14px; /* Smaller on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 12px; /* Smallest font size for very small screens */
+  }
+}
+
+/* Example usage */
+body {
+  font-size: 1rem; /* Relative to the root font size */
+}
+
+h1 {
+  font-size: 2.5rem; /* Scales dynamically */
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1rem;
 }
 
 body {
@@ -167,15 +207,38 @@ body {
 
 .hero-content {
   max-width: 800px;
-  margin-top: 25rem; /* Adjust margin-top for vertical spacing */
+  margin-top: 24rem; /* Default margin for large screens */
   margin-left: auto;
   margin-right: auto;
-  padding: 1rem; /* Add padding for spacing within the container */
-  text-align: center; /* Center align content horizontally */
+  padding: 1rem; /* Padding within the container */
+  text-align: center; /* Center-align content horizontally */
 }
 
+/* Adjust margin-top for medium-sized screens */
+@media (max-width: 1024px) {
+  .hero-content {
+    margin-top: 20rem;
+  }
+}
+
+/* Adjust margin-top for smaller screens */
+@media (max-width: 768px) {
+  .hero-content {
+    margin-top: 16rem;
+  }
+}
+
+/* Adjust margin-top for extra small screens */
+@media (max-width: 480px) {
+  .hero-content {
+    margin-top: 12rem;
+    padding: 0.5rem; /* Reduce padding on smaller screens */
+  }
+}
+
+
 .hero h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   margin-bottom: 1rem;
   text-transform: uppercase;
   letter-spacing: 2px;
